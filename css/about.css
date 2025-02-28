@@ -1,0 +1,20 @@
+#about-actual {
+    width: 1200px;
+    height: 400px;
+    background-color: lemonchiffon;
+    gap: 50px;
+}
+#about-actual > div {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#about-actual > div > p {
+    margin-bottom: 20px;
+}
+
+main > div:not(#about-actual) {
+    padding: 20px 0;
+}

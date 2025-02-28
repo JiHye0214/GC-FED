@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/about.css" />
+        <script defer src="./js/common.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <title>About</title>
+    </head>
+    <body>
+        <div class="background justify-align-center">
+            <!-- common -->
+            <header>
+                <div id="logo">
+                    <h1>Welcome to My Website</h1>
+                    <p>This is a basic HTML page structure</p>
+                </div>
+                <nav>
+                    <a href="index.html"> Home </a>
+                    <a href="about.html"> About </a>
+                    <a href="projects.html"> Projects </a>
+                    <a href="contact.html"> Contact </a>
+                </nav>
+            </header>
+
+            <main>
+                <div id="about-actual" class="justify-align-center">
+                    <div>
+                        <h2>About Me</h2>
+                        <p>Watch my introduction video :</p>
+                        <video width="400" height="225" controls poster="assets/sample.jpg" loop>
+                            <source src="assets/intro-video.mp4" type="video/mp4" />
+                            <source src="assets/intro-video.webm" type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div>
+                        <h2>My Voice Introduction</h2>
+                        <p>Listen to a short introduction about me :</p>
+                        <audio controls>
+                            <source src="assets/intro-audio.mp3" type="audio/mpeg" loop />
+                            <source src="assets/intro-audio.ogg" type="audio/ogg" />
+                            Your browser does not support the audio tag.
+                        </audio>
+                    </div>
+                </div>
+    
+                <div id="title">
+                    <h1>JIHYE PARK</h1>
+                    <p>Experienced in front-end and back-end development</p>
+                </div>
+                <div id="skills">
+                    <p><strong>Skills:</strong> <b>HTML</b>, <i>CSS</i>, <u>JavaScript</u></p>
+                    <p><em>Available for freelance work.</em></p>
+                    <p><mark>Currendtly learning React.js</mark></p>
+                    <p><del>Formerly a Graphic Designer</del></p>
+                    <p><ins>Now focusing on Full-Stack Developer</ins></p>
+                </div>
+                <div id="text-wrap" class="justify-align-center">
+                    <div class="justify-align-center">
+                        <h2>Work Experience</h2>
+                        <ul>
+                            <li>Software Developer - ABC Tech (2022 - present)</li>
+                            <li>Web Designer - XYZ Solutions (2019 - 2022)</li>
+                            <li>Intern - WebWorks Inc. (2018 - 2019)</li>
+                        </ul>
+                    </div>
+                    <div class="justify-align-center">
+                        <h2>Skills</h2>
+                        <ul type="square">
+                            <li>HTML, CSS, Javascript</li>
+                            <li>Responsive Web Design</li>
+                            <li>UI/UX Prototyping</li>
+                        </ul>
+                    </div>
+                    <div class="justify-align-center">
+                        <h2>Certifications</h2>
+                        <dl>
+                            <dt>Google UX Design Certification</dt>
+                            <dd>Completed in 2023, focused on user-centered design.</dd>
+                            <dt>Web Development Bootcamp</dt>
+                            <dd>Full-stack web development training in 2022.</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div>
+                    <h2>Education</h2>
+                    <table width="100%" border="1">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Institution</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bachelor of Science in Computer Science</td>
+                                <td>ABC University</td>
+                                <td>2018 - 2022</td>
+                            </tr>
+                            <tr>
+                                <td>Web Development Certification</td>
+                                <td>XYZ Online Academy</td>
+                                <td>2023</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Additional coursework in UI/UX and JavaScript.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </main> 
+            <footer class="justify-align-center">
+                footer
+            </footer>
+        </div>
+    </body>
+</html>
