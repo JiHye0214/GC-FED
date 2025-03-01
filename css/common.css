@@ -88,6 +88,10 @@ header nav > a#contact-me {
 /* main */
 main {
     height: calc(100vh - 140px);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 /* footer */

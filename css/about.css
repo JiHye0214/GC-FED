@@ -1,11 +1,6 @@
 main section {
     justify-content: unset;
     gap: 60px;
-    
-    overflow-y: scroll;
-    &::-webkit-scrollbar {
-        display: none;
-    }
 }
 
 main section > div {
