@@ -17,12 +17,12 @@ main section #home-main-text-wrap span {
     color: var(--my-yellow);
 }
 main section #home-main-text-wrap a {
-    width: 120px;
-    font-size: 14px;
-    padding: 13px 10px;
+    width: 130px;
+    font-size: 20px;
+    padding: 10px 15px;
     background-color: var(--my-yellow);
     color: white;
-    border-radius: 8px;
+    border-radius: 10px;
     
     &:hover {
         background-color: var(--yellow-hover);
@@ -41,13 +41,4 @@ main section #home-main-img-wrap img {
     position: absolute;
     bottom: 0px;
     left: 50px;
-}
-
-
-footer ul {
-    gap: 20px;
-}
-footer ul img {
-    width: 25px;
-    height: 25px;
 }

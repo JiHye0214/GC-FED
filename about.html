@@ -10,7 +10,7 @@
         <title>About</title>
     </head>
     <body>
-        <div class="background justify-align-center">
+        <div class="background">
             <!-- common -->
             <header>
                 <section>
@@ -22,103 +22,133 @@
                         <a href="index.html"> Home </a>
                         <a href="about.html"> About </a>
                         <a href="projects.html"> Projects </a>
-                        <a href="contact.html"> Contact </a>
+                        <a id="contact-me" href="contact.html"> Contact Me </a>
                     </nav>
                 </section>
             </header>
-
+            
             <main>
-                <div id="about-actual" class="justify-align-center">
-                    <div>
-                        <h2>About Me</h2>
-                        <p>Watch my introduction video :</p>
-                        <video width="400" height="225" controls poster="assets/sample.jpg" loop>
-                            <source src="assets/intro-video.mp4" type="video/mp4" />
-                            <source src="assets/intro-video.webm" type="video/webm" />
-                            Your browser does not support the video tag.
-                        </video>
+                <section>
+                    <div id="about-left-wrap">
+                        <div>
+                            <!-- <h2>About Me</h2> -->
+                            <!-- <p>Watch my introduction video :</p> -->
+                            <!-- <video controls poster="assets/sample.jpg" loop> -->
+                            <video controls>
+                                <source src="assets/intro-video.mp4" type="video/mp4" />
+                                <source src="assets/intro-video.webm" type="video/webm" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <!-- <h2>My Voice Introduction</h2>
+                            <p>Listen to a short introduction about me :</p> -->
+                            <audio controls>
+                                <source src="assets/intro-audio.mp3" type="audio/mpeg" />
+                                <source src="assets/intro-audio.ogg" type="audio/ogg" />
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </div>
                     </div>
-                    <div>
-                        <h2>My Voice Introduction</h2>
-                        <p>Listen to a short introduction about me :</p>
-                        <audio controls>
-                            <source src="assets/intro-audio.mp3" type="audio/mpeg" loop />
-                            <source src="assets/intro-audio.ogg" type="audio/ogg" />
-                            Your browser does not support the audio tag.
-                        </audio>
+
+                    <div id="about-right-wrap">
+                        <h1 id="my-name" class="thick-font">JIHYE PARK</h1>
+
+                        <div id="about-me">
+                            <p>Experienced in front-end and back-end development</p>
+                            <!-- <p><strong>Skills:</strong> <b>HTML</b>, <i>CSS</i>, <u>JavaScript</u></p> -->
+                            <p><em>Available for freelance work.</em></p>
+                            <!-- <p><mark>Currendtly learning Angular.js</mark></p> -->
+                            <p>Currendtly learning Angular.js</p>
+                            <!-- <p><del>Formerly a Graphic Designer</del></p> -->
+                            <p><ins>Focusing on Full-Stack Developer</ins></p>
+                        </div>
+
+                        <div id="about-skills">
+                            <h2 class="thick-font">Skills</h2>
+                            <ul type="square">
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>Responsive Web Design</li>
+                                <li>UI/UX Prototyping</li>
+                                <li>React.js, Redux</li>
+                                <li>Database Management</li>
+                                <li>Spring Boot, REST API</li>
+                                <li>Cloud Services</li>
+                                <li>Version Control</li>
+                            </ul>
+                        </div>
+
+                        <div id="about-cert">
+                            <h2 class="thick-font">Certifications</h2>
+                            <dl>
+                                <dt>KOREA IT</dt>
+                                <dd>Front End Development Certification</dd>
+                                <dd>Back End Development Certification</dd>
+                                <dd>Data Analysis using Python-based AI Certification</dd>
+                                <dd>Data Analysis using R Certification</dd>
+                            </dl>
+                        </div>
+
+                        <div id="about-work">
+                            <h2 class="thick-font">Work Experience</h2>
+                            <ul>
+                                <!-- <li>Software Developer - ABC Tech (2022 - present)</li>
+                                <li>Web Designer - XYZ Solutions (2019 - 2022)</li>
+                                <li>Intern - WebWorks Inc. (2018 - 2019)</li> -->
+                            </ul>
+                        </div>
+
+                        <div id="about-education">
+                            <h2 class="thick-font">Educations</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Diploma</th>
+                                        <th>Institution</th>
+                                        <th>Location</th>
+                                        <th>Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Diploma in Front End Development</td>
+                                        <td>Greystone College</td>
+                                        <td>Vancouver, Canada</td>
+                                        <td>2024-2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Highschool Diploma</td>
+                                        <td>Mirim Highschool</td>
+                                        <td>Seoul, South Korea</td>
+                                        <td>2020-2022</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-    
-                <div id="title">
-                    <h1>JIHYE PARK</h1>
-                    <p>Experienced in front-end and back-end development</p>
-                </div>
-                <div id="skills">
-                    <p><strong>Skills:</strong> <b>HTML</b>, <i>CSS</i>, <u>JavaScript</u></p>
-                    <p><em>Available for freelance work.</em></p>
-                    <p><mark>Currendtly learning React.js</mark></p>
-                    <p><del>Formerly a Graphic Designer</del></p>
-                    <p><ins>Now focusing on Full-Stack Developer</ins></p>
-                </div>
-                <div id="text-wrap" class="justify-align-center">
-                    <div class="justify-align-center">
-                        <h2>Work Experience</h2>
-                        <ul>
-                            <li>Software Developer - ABC Tech (2022 - present)</li>
-                            <li>Web Designer - XYZ Solutions (2019 - 2022)</li>
-                            <li>Intern - WebWorks Inc. (2018 - 2019)</li>
-                        </ul>
-                    </div>
-                    <div class="justify-align-center">
-                        <h2>Skills</h2>
-                        <ul type="square">
-                            <li>HTML, CSS, Javascript</li>
-                            <li>Responsive Web Design</li>
-                            <li>UI/UX Prototyping</li>
-                        </ul>
-                    </div>
-                    <div class="justify-align-center">
-                        <h2>Certifications</h2>
-                        <dl>
-                            <dt>Google UX Design Certification</dt>
-                            <dd>Completed in 2023, focused on user-centered design.</dd>
-                            <dt>Web Development Bootcamp</dt>
-                            <dd>Full-stack web development training in 2022.</dd>
-                        </dl>
-                    </div>
-                </div>
-                <div>
-                    <h2>Education</h2>
-                    <table width="100%" border="1">
-                        <thead>
-                            <tr>
-                                <th>Degree</th>
-                                <th>Institution</th>
-                                <th>Year</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Bachelor of Science in Computer Science</td>
-                                <td>ABC University</td>
-                                <td>2018 - 2022</td>
-                            </tr>
-                            <tr>
-                                <td>Web Development Certification</td>
-                                <td>XYZ Online Academy</td>
-                                <td>2023</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="3">Additional coursework in UI/UX and JavaScript.</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
+                </section>
             </main> 
-            <footer class="justify-align-center">
-                footer
+
+            <footer>
+                <section>
+                    <ul class="justify-align-center">
+                        <li>
+                            <a href="https://github.com/JiHye0214">
+                                <img src="./assets/github.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="www.linkedin.com/in/jihye-p-2b3755344">
+                                <img src="./assets/linkedin.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.notion.so/sophie1workplace/Jihye-s-Portfolio-235dc065b28746409114046a5f3f2103?pvs=4">
+                                <img src="./assets/notion.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
             </footer>
         </div>
     </body>

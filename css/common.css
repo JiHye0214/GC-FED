@@ -3,6 +3,7 @@
 :root {
     --my-yellow : #ffd745;
     --yellow-hover : rgb(255, 191, 0);
+    --light-border : rgb(236, 236, 236);
 }
 
 * {
@@ -40,13 +41,19 @@ section {
     width: 1000px;
     height: 100%;
 }
-
+td {
+    padding: 10px 0;
+}
+dt {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
 /* specific tag */
 /* header */
 header {
     height: 70px;
-    border-bottom: thin solid rgb(236, 236, 236);
+    border-bottom: thin solid var(--light-border);
 }
 header section {
     justify-content: space-between;
@@ -63,8 +70,18 @@ header nav > a {
     height: 40px;
     line-height: 40px;
 
-    &:hover {
+    &:not(#contact-me):hover {
         border-bottom: 3px solid var(--my-yellow)
+    }
+}
+header nav > a#contact-me {
+    color: white;
+    padding: 0 15px;
+    border-radius: 10px;
+    background-color: var(--my-yellow);
+
+    &:hover {
+        background-color: var(--yellow-hover);
     }
 }
 
@@ -72,21 +89,19 @@ header nav > a {
 main {
     height: calc(100vh - 140px);
 }
-/* main section {
-    justify-content: unset;
-    flex-direction: column;
-
-    overflow-y: scroll;
-    &::-webkit-scrollbar {
-        display: none;
-    }
-} */
 
 /* footer */
 footer {
     height: 70px;
-    font-weight: 600;
+    border-top: thin solid var(--light-border);
 }
 footer section {
     justify-content: left;
+}
+footer ul {
+    gap: 18px;
+}
+footer ul img {
+    width: 20px;
+    height: 20px;
 }

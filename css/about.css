@@ -1,20 +1,59 @@
-#about-actual {
-    width: 1200px;
-    height: 400px;
-    background-color: lemonchiffon;
-    gap: 50px;
+main section {
+    justify-content: unset;
+    gap: 60px;
+    
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
-#about-actual > div {
+
+main section > div {
     width: 400px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    height: 100%;
+    padding-top: 40px;
+    
+    &:last-child {
+        width: 540px;
+    }
 }
-#about-actual > div > p {
+
+main section > #about-left-wrap video {
+    width: 400px;
+    border-radius: 15px;
     margin-bottom: 20px;
 }
 
-main > div:not(#about-actual) {
-    padding: 20px 0;
+main section > #about-right-wrap * {
+    text-align: left;
+    font-size: 14px;
 }
+main section > #about-right-wrap .thick-font {
+    font-weight: 900;
+    font-size: 16px;
+}
+main section > #about-right-wrap > #my-name {
+    font-size: 30px;
+}
+main section > #about-right-wrap > div {
+    border-bottom: thin solid var(--light-border);
+    padding: 20px 0;
+
+    &:last-child {
+        border: none;
+    }
+}
+main section > #about-right-wrap > #about-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+main section > #about-right-wrap > #about-skills ul li {
+    width: 200px;
+}
+main section > #about-right-wrap > #about-skills ul,
+main section > #about-right-wrap > #about-cert dl,
+main section > #about-right-wrap > #about-work ul,
+main section > #about-right-wrap #about-education table {
+    margin: 20px 0 0 30px;
+}
+
