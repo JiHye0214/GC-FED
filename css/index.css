@@ -1,44 +1,53 @@
 
-#resume {
-    padding: 50px 0;
+main section {
+    justify-content: space-between;
+}
+main section #home-main-text-wrap {
+    display: flex;
+    justify-content: left;
     flex-direction: column;
-    gap: 30px;
+    font-weight: 900;
+    gap: 40px;
 }
-
-#connect {
-    position: relative;
+main section #home-main-text-wrap p {
+    font-size: 50px;
+    text-align: left;
 }
-#connect > img {
-    margin-top: 10px;
-    border-radius: 15px;
+main section #home-main-text-wrap span {
+    color: var(--my-yellow);
 }
-#connect > #connect-img-wrap {
-    display: none;
-    width: 150px;
-    height: 113px;
-    background-color: rgba(255, 255, 255, 0.429);
-    border-radius: 15px;
-    position: absolute;
-    top: 33px;
-    gap: 20px;
-}
-
-#text-wrap {
-    height: 250px;
-    gap: 20px;
-}
-#text-wrap > div {
-    width: 350px;
-    height: 100%;
-    background-color: lemonchiffon;
-    border-radius: 15px;
-    flex-direction: column;
-    gap: 20px;
-
+main section #home-main-text-wrap a {
+    width: 120px;
+    font-size: 14px;
+    padding: 13px 10px;
+    background-color: var(--my-yellow);
+    color: white;
+    border-radius: 8px;
+    
     &:hover {
-        background-color: rgb(255, 245, 152);
+        background-color: var(--yellow-hover);
     }
 }
-#text-wrap > div > *:not(h2) {
-    font-size: 13px;
+main section #home-main-img-wrap {
+    width: 400px;
+    height: 450px;
+    border-radius: 70% 70% 100% 100%;
+    background-color: var(--my-yellow);
+    overflow: hidden;
+    position: relative;
+}
+main section #home-main-img-wrap img {
+    width: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+
+
+footer ul {
+    gap: 20px;
+}
+footer ul img {
+    width: 25px;
+    height: 25px;
 }
