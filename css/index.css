@@ -1,24 +1,24 @@
 
-main #home-main-wrap {
+#home-main-wrap {
     width: 1000px;
     display: flex;
     justify-content: space-between;
 }
-main #home-main-wrap #home-main-text-wrap {
+#home-main-wrap #home-main-text-wrap {
     display: flex;
     justify-content: left;
     flex-direction: column;
     font-weight: 900;
     gap: 40px;
 }
-main #home-main-wrap #home-main-text-wrap p {
+#home-main-wrap #home-main-text-wrap p {
     font-size: 50px;
     text-align: left;
 }
-main #home-main-wrap #home-main-text-wrap span {
+#home-main-wrap #home-main-text-wrap span {
     color: var(--my-yellow);
 }
-main #home-main-wrap #home-main-text-wrap a {
+#home-main-wrap #home-main-text-wrap a {
     width: 130px;
     font-size: 20px;
     padding: 10px 15px;
@@ -30,7 +30,7 @@ main #home-main-wrap #home-main-text-wrap a {
         background-color: var(--yellow-hover);
     }
 }
-main #home-main-wrap #home-main-img-wrap {
+#home-main-wrap #home-main-img-wrap {
     width: 400px;
     height: 450px;
     border-radius: 70% 70% 100% 100%;
@@ -38,7 +38,7 @@ main #home-main-wrap #home-main-img-wrap {
     overflow: hidden;
     position: relative;
 }
-main #home-main-wrap #home-main-img-wrap img {
+#home-main-wrap #home-main-img-wrap img {
     width: 300px;
     position: absolute;
     bottom: 0px;

@@ -13,24 +13,31 @@ main section > div {
     }
 }
 
-main section > #about-left-wrap video {
+#about-left-wrap video {
     width: 400px;
     border-radius: 15px;
     margin-bottom: 20px;
 }
+#about-left-wrap #about-location iframe {
+    width: 400px;
+    height: 300px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 20px;
+}
 
-main section > #about-right-wrap * {
+#about-right-wrap * {
     text-align: left;
     font-size: 14px;
 }
-main section > #about-right-wrap .thick-font {
+#about-right-wrap .thick-font {
     font-weight: 900;
     font-size: 16px;
 }
-main section > #about-right-wrap > #my-name {
+#about-right-wrap > #my-name {
     font-size: 30px;
 }
-main section > #about-right-wrap > div {
+#about-right-wrap > div {
     border-bottom: thin solid var(--light-border);
     padding: 20px 0;
 
@@ -38,17 +45,17 @@ main section > #about-right-wrap > div {
         border: none;
     }
 }
-main section > #about-right-wrap > #about-skills ul {
+#about-right-wrap > #about-skills ul {
     display: flex;
     flex-wrap: wrap;
 }
-main section > #about-right-wrap > #about-skills ul li {
+#about-right-wrap > #about-skills ul li {
     width: 200px;
 }
-main section > #about-right-wrap > #about-skills ul,
-main section > #about-right-wrap > #about-cert dl,
-main section > #about-right-wrap > #about-work ul,
-main section > #about-right-wrap #about-education table {
+#about-right-wrap > #about-skills ul,
+#about-right-wrap > #about-cert dl,
+#about-right-wrap > #about-work ul,
+#about-right-wrap #about-education table {
     margin: 20px 0 0 30px;
 }
 
