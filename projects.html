@@ -1,123 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/projects.css" />
-    <script defer src="./js/common.js"></script>
-    <script defer src="./js/project.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <title>JIHYE - Portfolio</title>
-</head>
-<body>
-    <div class="background">
-        <!-- modal -->
-        <div id="project-modal-wrap">
-            <div id="project-modal">
-                <div id="project-modal-intro">
-                    <div>Web Development</div>
-                    <div id="project-modal-intro-client">VCEC</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/projects.css" />
+        <script defer src="./js/common.js"></script>
+        <script defer src="./js/project.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <title>JIHYE - Portfolio</title>
+    </head>
+    <body>
+        <div class="background">
+            <!-- modal -->
+            <div id="project-modal-wrap">
+                <div id="project-modal">
                 </div>
-                    
-                <div id="project-modal-slide" class="justify-align-center">
-                    <div id="project-modal-slide-btns">
-                        <img class="btn-hover" src="./assets/left-arrow.png" alt="">
-                        <img class="btn-hover" src="./assets/right-arrow.png" alt="">
-                    </div>
-                    <div id="project-modal-slide-frame">
-                        <div id="project-modal-slide-pics">
-                            <img src="./assets/kkia/kkia-main.png" alt="">
-                            <img src="./assets/kkia/kkia-login.png" alt="">
-                            <img src="./assets/kkia/kkia-signin.png" alt="">
-                            <img src="./assets/kkia/kkia-find.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div id="project-modal-bgnd">
-                    <p>Project Background</p>
-                    <div></div>
-                </div>
-                <div id="project-modal-clngs">
-                    <p>Challenges & Requirements</p>
-                    <div></div>
-                </div>
-                <div id="project-modal-outs">
-                    <p>Actions & Outcomes</p>
-                    <div></div>
-                </div>
-                <div id="project-modal-techs">
-                    <p>Technologies Used</p>
-                    <div></div>
-                </div>
-                <div id="project-modal-fins">
-                    <p>Conclusions</p>
-                    <div></div>
-                </div>
+            </div>
 
-                <div id="project-modal-close">
-                    <img src="./assets/close.png" class="btn-hover">
-                </div>
-            </div>     
-        </div>
+            <!-- common -->
+            <header>
+                <section>
+                    <div id="logo">
+                        JIHYE
+                        <!-- <p>This is a basic HTML page structure</p> -->
+                    </div>
+                    <nav>
+                        <a href="index.html"> Home </a>
+                        <a href="about.html"> About </a>
+                        <a href="projects.html"> Projects </a>
+                        <a id="contact-me" href="contact.html"> Contact Me </a>
+                    </nav>
+                </section>
+            </header>
 
-        <!-- common -->
-        <header>
-            <section>
-                <div id="logo">
-                    JIHYE
-                    <!-- <p>This is a basic HTML page structure</p> -->
-                </div>
-                <nav>
-                    <a href="index.html"> Home </a>
-                    <a href="about.html"> About </a>
-                    <a href="projects.html"> Projects </a>
-                    <a id="contact-me" href="contact.html"> Contact Me </a>
-                </nav>
-            </section>
-        </header>
-        
-        <main>
-            <section>
-                <div id="project-nav" class="justify-align-center">
-                    <ul class="justify-align-center">
-                        <li>All</li>
-                        <li>Angular</li>
-                        <li>React</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-                <div id="project-wrap"></div>
-                <!-- <div>
+            <main>
+                <section>
+                    <div id="project-nav" class="justify-align-center">
+                        <ul class="justify-align-center">
+                            <li>All</li>
+                            <li>Angular</li>
+                            <li>React</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                    <div id="project-wrap"></div>
+                    <!-- <div>
                     <h2>My Web App</h2>
                     <p>Here's a live preview of one of my projects : </p>
                     <iframe style="border : 2px solid; border-radius: 10px" src="http://127.0.0.1:5500/Day2/practice1.html" frameborder="0"></iframe>
                 </div> -->
-            </section>
-        </main>
+                </section>
+            </main>
 
-        <footer>
-            <section>
-                <ul class="justify-align-center">
-                    <li>
-                        <a href="https://github.com/JiHye0214">
-                            <img src="./assets/github.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="www.linkedin.com/in/jihye-p-2b3755344">
-                            <img src="./assets/linkedin.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.notion.so/sophie1workplace/Jihye-s-Portfolio-235dc065b28746409114046a5f3f2103?pvs=4">
-                            <img src="./assets/notion.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </footer>
-    </div>
-</body>
+            <footer>
+                <section>
+                    <ul class="justify-align-center">
+                        <li>
+                            <a href="https://github.com/JiHye0214">
+                                <img src="./assets/github.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="www.linkedin.com/in/jihye-p-2b3755344">
+                                <img src="./assets/linkedin.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.notion.so/sophie1workplace/Jihye-s-Portfolio-235dc065b28746409114046a5f3f2103?pvs=4"
+                            >
+                                <img src="./assets/notion.png" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </footer>
+        </div>
+    </body>
 </html>
