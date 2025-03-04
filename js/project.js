@@ -1,36 +1,45 @@
 const projects = [
     {
-        logoImg : "./assets/notion.png",
+        logoImg : "./assets/logo/notion.png",
         client : "VCEC",
-        projectSummary : "Create Study Abroad Center Website", // project background
+        projectSummary : "Create Education Consulting Center Website", // project background
         category : "Website Development",
-        skills : ["jQuery", "MySQL", "HTML/CSS"],
-        previews : ["./assets/kkia/", "./assets/kkia/", "./assets/kkia/"],
-        challenges : "djsfefefe",
-        outcomes : "dsjfieofe",
-        conclude : "djisjeff",
+        skills : ["WIX", "database", "JavaScript"],
+        previews : ["./assets/projects/vcec/vcec-main.png", "./assets/projects/vcec/vcec-main2.png", "./assets/projects/vcec/vcec-about.png", "./assets/projects/vcec/vcec-univ.png"],
+        challenges : "abcde",
+        outcomes : "abcde",
+        techs : ["./assets/logo/wix.png"],
+        conclude : "abcde",
     },
     {
-        logoImg : "./assets/notion.png",
+        logoImg : "./assets/logo/notion.png",
         client : "Team Project",
         projectSummary : "for Study",
         category : "Webapp Development",
         skills : ["jQuery", "MySQL", "HTML/CSS"],
-        previews : ["./assets/kkia/", "./assets/kkia/", "./assets/kkia/"],
-        challenges : "djsfefefe",
-        outcomes : "dsjfieofe",
-        conclude : "djisjeff",
+        previews : ["./assets/projects/kkia/kkia-login.png", "./assets/projects/kkia/kkia-signin.png", "./assets/projects/kkia/kkia-find.png", "./assets/projects/kkia/kkia-main.png"],
+        challenges : "abcde",
+        outcomes : "abcde",
+        techs : ["./assets/logo/html.png", "./assets/logo/css.png", "./assets/logo/js.png", 
+            "./assets/logo/java.png", "./assets/logo/thymeleaf.png", "./assets/logo/springboot.png", 
+            "./assets/logo/MySQL.png", "./assets/logo/mybatis.png", "./assets/logo/dbeaver.png"],
+        conclude : "abcde",
     },
     {
-        logoImg : "./assets/notion.png",
+        logoImg : "./assets/logo/notion.png",
         client : "Team Project",
         projectSummary : "for Study",
         category : "Webapp Development",
-        skills : ["jQuery", "MySQL", "HTML/CSS", "HTML/CSS"],
-        previews : ["./assets/kkia/", "./assets/kkia/", "./assets/kkia/"],
-        challenges : "djsfefefe",
-        outcomes : "dsjfieofe",
-        conclude : "djisjeff",
+        skills : ["jQuery", "MySQL", "HTML/CSS"],
+        previews : ["./assets/projects/mychild/mychild-main.jpg", "./assets/projects/mychild/mychild-main2.jpg", "./assets/projects/mychild/mychild-login.jpg", 
+            "./assets/projects/mychild/mychild-find.jpg", "./assets/projects/mychild/mychild-signin.jpg", "./assets/projects/mychild/mychild-together.jpg", 
+            "./assets/projects/mychild/mychild-together-detail.jpg", "./assets/projects/mychild/mychild-zzim.jpg"],
+        challenges : "abcde",
+        outcomes : "abcde",
+        techs : ["./assets/logo/html.png", "./assets/logo/css.png", "./assets/logo/js.png", 
+            "./assets/logo/java.png", "./assets/logo/thymeleaf.png", "./assets/logo/springboot.png", 
+            "./assets/logo/MySQL.png", "./assets/logo/mybatis.png", "./assets/logo/dbeaver.png"],
+        conclude : "abcde",
     }
 ]
 
@@ -76,6 +85,7 @@ projects.forEach(project => {
 
 const functionDrowProjectModal = (index) => {
     $("#project-modal-wrap").css("display", "flex");
+    $("#project-modal-wrap").scrollTop(0);
     const modalProject = projects[index];
 
     let modalItem = $(`
@@ -86,12 +96,7 @@ const functionDrowProjectModal = (index) => {
 
         <div id="project-modal-slide" class="justify-align-center">
             <div id="project-modal-slide-frame">
-                <div id="project-modal-slide-pics">
-                    <img src="./assets/kkia/kkia-main.png" alt="" />
-                    <img src="./assets/kkia/kkia-login.png" alt="" />
-                    <img src="./assets/kkia/kkia-signin.png" alt="" />
-                    <img src="./assets/kkia/kkia-find.png" alt="" />
-                </div>
+                <div id="project-modal-slide-pics"></div>
             </div>
             <div id="project-modal-slide-btns">
                 <img id="slide-btn-left" class="btn-hover" src="./assets/prev.png" alt="" />
@@ -100,47 +105,23 @@ const functionDrowProjectModal = (index) => {
         </div>
         <div id="project-modal-bgnd">
             <p class="semi-title">Project Background</p>
-            <div>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, rerum. Quod earum neque a nemo
-                ratione culpa! Beatae eius numquam sed, velit et doloremque suscipit, repellendus accusamus rem
-                placeat laboriosam.
-            </div>
+            <div>${modalProject.projectSummary}</div>
         </div>
         <div id="project-modal-clngs">
             <p class="semi-title">Challenges & Requirements</p>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis suscipit cumque est dolor
-                similique minima in aliquam ipsum, ipsam nostrum, praesentium sit tempora deserunt et esse minus
-                voluptatibus? Mollitia, odit!
-            </div>
+            <div>${modalProject.challenges}</div>
         </div>
         <div id="project-modal-outs">
             <p class="semi-title">Actions & Outcomes</p>
-            <div>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore est fugit unde architecto ipsa natus
-                impedit reiciendis voluptatem dolorem quas ipsum, libero ad rerum ab laudantium nam voluptates
-                dolores? Exercitationem.
-            </div>
+            <div>${modalProject.outcomes}</div>
         </div>
         <div id="project-modal-techs">
             <p class="semi-title">Technologies Used</p>
-            <div>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam modi fugit eveniet autem
-                    aspernatur natus repellat eos inventore cumque accusamus accusantium assumenda labore, facere
-                    incidunt fuga ipsa fugiat, recusandae suscipit.
-                </p>
-            </div>
+            <div id="project-modal-techs-img"></div>
         </div>
         <div id="project-modal-fins">
             <p class="semi-title">Conclusions</p>
-            <div>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam modi fugit eveniet autem
-                    aspernatur natus repellat eos inventore cumque accusamus accusantium assumenda labore, facere
-                    incidunt fuga ipsa fugiat, recusandae suscipit.
-                </p>
-            </div>
+            <div>${modalProject.conclude}</div>
         </div>
 
         <div id="project-modal-close">
@@ -149,33 +130,35 @@ const functionDrowProjectModal = (index) => {
     `);
 
     $("#project-modal").append(modalItem);
-    functionControlSlide();
-}
 
-// Open Project Modal
-$("#project-wrap").on("click", ".project-item", (event) => {
-    const targetIndex = $(".project-item").index(event.currentTarget);
+    // draw previews 
+    let previewsList = modalItem.find("#project-modal-slide-pics"); // > 못 씀. 하나만 지정 가능 
+    modalProject.previews.forEach(pic => {
+        previewsList.append(`<img src="${pic}"/>`);
+    });
 
-    functionDrowProjectModal(targetIndex);
-})
+    // draw techs
+    let techsList = modalItem.find("#project-modal-techs-img"); // > 못 씀. 하나만 지정 가능 
+    modalProject.techs.forEach(tech => {
+        techsList.append(`<img src="${tech}"/>`);
+    });
 
-// Control Modal Slide
-const functionSetSliderBtn = (width) => {
-    if (width == 0) {
-        $("#slide-btn-left").addClass("btn-deaction");
-    } else if (width == (imgCounnt - 1) * -600) {
-        $("#slide-btn-right").addClass("btn-deaction");
-    } else {
-        $("#slide-btn-left").removeClass("btn-deaction");
-        $("#slide-btn-right").removeClass("btn-deaction");
-    }
-};
-const functionControlSlide = () => {
-    const imgCounnt = document.querySelectorAll("#project-modal-slide-pics > img").length;
+    // Control Modal Slide
+    const imgCount = document.querySelectorAll("#project-modal-slide-pics > img").length;
+    const functionSetSliderBtn = (width) => {
+        if (width == 0) {
+            $("#slide-btn-left").addClass("btn-deaction");
+        } else if (width == (imgCount - 1) * -600) {
+            $("#slide-btn-right").addClass("btn-deaction");
+        } else {
+            $("#slide-btn-left").removeClass("btn-deaction");
+            $("#slide-btn-right").removeClass("btn-deaction");
+        }
+    };
+
     let moveWidth = 0; 
-
     functionSetSliderBtn(moveWidth);
-    
+
     $("#project-modal-slide-btns").on("click", ".btn-hover", (event) => {
         const targetIndex = $(".btn-hover").index(event.currentTarget);
         
@@ -184,7 +167,7 @@ const functionControlSlide = () => {
                 moveWidth += 600;
             }
         } else { // right
-            if(moveWidth != (imgCounnt - 1) * -600) {
+            if(moveWidth != (imgCount - 1) * -600) {
                 moveWidth -= 600;
             }
         }
@@ -199,9 +182,18 @@ const functionControlSlide = () => {
 
     // Close Project Modal
     $("#project-modal-close > img").on("click", () =>{
-    $("#project-modal-wrap").hide();
-    $("#project-modal").html("");
-})
+        $("#project-modal-wrap").hide();
+        $("#project-modal").html("");
+    })
 }
+
+// Open Project Modal
+$("#project-wrap").on("click", ".project-item", (event) => {
+    const targetIndex = $(".project-item").index(event.currentTarget);
+
+    functionDrowProjectModal(targetIndex);
+})
+
+
 
 

@@ -88,6 +88,14 @@ main section {
     height: 336px;
 
 }
+#project-modal-techs-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#project-modal-techs-img img {
+    width: 50px;
+}
 
 #project-nav {
     width: 100%;
@@ -136,8 +144,7 @@ main section {
 .project-item-intro-wrap .project-item-intro-img {
     width: 320px;
     height: 250px;
-    overflow: hidden;
-    background-color: var(--light-border)/* 어두운 배경 */
+    background-color: var(--light-border);
 }
 .project-item-intro-wrap img {
     width: 30%;
