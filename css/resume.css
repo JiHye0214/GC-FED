@@ -1,0 +1,13 @@
+main section {
+    align-items: unset;
+}
+
+main section div {
+    height: fit-content;
+    padding: 50px;
+}
+
+main section img {
+    width: 700px;
+    height: fit-content;
+}

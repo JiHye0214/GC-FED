@@ -167,7 +167,7 @@ main section {
     }
 }
 .project-item-intro-wrap:hover .project-item-intro-content {
-    animation: moveUp 0.1s ease-in-out forwards;
+    animation: moveUp 1s ease-in-out forwards;
 }
 .project-item-intro-wrap:not(:hover) .project-item-intro-content {
     animation: moveDown 0.1s ease-in-out forwards;
