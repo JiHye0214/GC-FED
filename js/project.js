@@ -1,6 +1,5 @@
 const projects = [
     {
-        logoImg : "./assets/logo/notion.png",
         client : "VCEC",
         projectSummary : "Create Education Consulting Center Website", // project background
         category : "Website Development",
@@ -12,7 +11,6 @@ const projects = [
         conclude : "abcde",
     },
     {
-        logoImg : "./assets/logo/notion.png",
         client : "Team Project",
         projectSummary : "for Study",
         category : "Webapp Development",
@@ -26,7 +24,6 @@ const projects = [
         conclude : "abcde",
     },
     {
-        logoImg : "./assets/logo/notion.png",
         client : "Team Project",
         projectSummary : "for Study",
         category : "Webapp Development",
@@ -49,7 +46,6 @@ projects.forEach(project => {
         <div class="project-item btn-hover">
             <div class="project-item-intro-wrap">
                 <div class="project-item-intro-img justify-align-center">
-                    <img src="${project.logoImg}" alt="">
                 </div>
                 <div class="project-item-intro-content">
                     <p>
