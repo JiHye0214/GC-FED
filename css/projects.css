@@ -132,7 +132,7 @@ main section {
 }
 .project-item {
     width: 320px;
-    height: 352px;
+    height: 302px;
     border-radius: 10px;
     overflow: hidden;
     border: thin solid var(--light-border);
@@ -143,7 +143,7 @@ main section {
 }
 .project-item-intro-wrap .project-item-intro-img {
     width: 320px;
-    height: 250px;
+    height: 200px;
     background-color: var(--light-border);
 }
 .project-item-intro-wrap img {
@@ -174,7 +174,7 @@ main section {
 }
 @keyframes moveUp {
     from {
-        top: 250px;
+        top: 200px;
     }
     to {
         top: 0;
@@ -185,7 +185,7 @@ main section {
         top: 0;
     }
     to {
-        top: 250px;
+        top: 200px;
     }
 }
 
