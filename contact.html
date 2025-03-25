@@ -1,136 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/contact.css" />
-    <script defer src="./js/common.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <title>JIHYE - Portfolio</title>
-</head>
-<body>
-    <div class="background">
-        <!-- common -->
-        <header>
-            <section>
-                <div id="logo">
-                    JIHYE
-                    <!-- <p>This is a basic HTML page structure</p> -->
-                </div>
-                <nav>
-                    <a href="index.html"> Home </a>
-                    <a href="about.html"> About </a>
-                    <a href="projects.html"> Projects </a>
-                    <a href="resume.html"> Resume </a>
-                    <a id="contact-me" href="contact.html"> Contact Me </a>
-                </nav>
-            </section>
-        </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/contact.css" />
+        <script defer src="./js/common.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <title>JIHYE - Portfolio</title>
+    </head>
+    <body>
+        <div class="background">
+            <header>
+                <section>
+                    <div id="logo">JIHYE</div>
+                    <nav>
+                        <a href="index.html"> Home </a>
+                        <a href="about.html"> About </a>
+                        <a href="projects.html"> Projects </a>
+                        <a href="resume.html"> Resume </a>
+                        <a id="contact-me" href="contact.html"> Contact Me </a>
+                    </nav>
+                </section>
+            </header>
 
-        <main>
-            <div id="contact-text-wrap" class="justify-align-center">
-                <div id="profile">
-                    <img src="./assets/profile.png"/>
+            <main>
+                <div id="contact-text-wrap" class="justify-align-center">
+                    <div id="profile">
+                        <img src="./assets/profile.png" />
+                    </div>
+                    <div id="contact-intro">
+                        <p>
+                            If you are interested in hiring me for your project please use the form below to get in touch.
+                            <br />
+                            Want to know how I work and what I can offer? Check out my
+                            <a href="./projects.html">project case studies</a> and <a href="./resume.html">resume</a>.
+                        </p>
+                    </div>
                 </div>
-                <div id="contact-intro">
-                    <p>
-                        If you are interested in hiring me for your project please use the form below to get in touch. 
-                        <br>
-                        Want to know how I work and what I can offer? Check out my <a href="./projects.html">project case studies</a> and <a href="./resume.html">resume</a>.
-                    </p>
-                    <!-- <ul>
-                        <li><a href="https://linkedin.com/in/johndoe" target="_blank">Linkedin</a></li>
-                        <li><a href="https://github.com/jhondoe">GitHub</a></li>
+                <div id="contact-form-wrap">
+                    <p id="contact-form-title">Get In Touch</p>
+                    <form action="submit_form.php" method="post">
+                        <input type="text" id="name" name="name" placeholder="Name" required />
+                        <input type="text" id="email" name="email" placeholder="Email" required />
+                        <textarea
+                            name="message"
+                            id="message"
+                            rows="4"
+                            cols="50"
+                            placeholder="Enter your message"
+                            required
+                        ></textarea>
+                        <input id="contact-form-btn" type="submit" value="Send Message" />
+                    </form>
+                </div>
+            </main>
+
+            <footer>
+                <section>
+                    <ul class="justify-align-center">
+                        <li>
+                            <a href="https://github.com/JiHye0214">
+                                <img src="./assets/logo/github.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/jihye-p-2b3755344">
+                                <img src="./assets/logo/linkedin.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.notion.so/sophie1workplace/Jihye-s-Portfolio-235dc065b28746409114046a5f3f2103?pvs=4"
+                            >
+                                <img src="./assets/logo/notion.png" alt="" />
+                            </a>
+                        </li>
                     </ul>
-                    <div id="connect-img-wrap" class="justify-align-center">
-                        <a href="https://linkedin.com/in/johndoe" target="_blank">
-                            <img src="assets/linkedin-icon.png" alt="LinkedIn" width="30" />
-                        </a>
-                        <a href="https://github.com/jhondoe">
-                            <img src="assets/github-icon.png" alt="GitHub" width="30" />
-                        </a>
-                    </div> -->
-                </div>
-            </div>
-            <div id="contact-form-wrap">
-                <p id="contact-form-title">Get In Touch</p>
-                <form action="submit_form.php" method="post">
-                    <!-- Full Name -->
-                    <!-- <label for="name"> Name : </label> -->
-                    <input type="text" id="name" name="name" placeholder="Name" required />
-                    <!-- <br /><br /> -->
-                    
-                    <!-- Email Address -->
-                    <!-- <label for="email"> Email : </label> -->
-                    <input type="text" id="email" name="email" placeholder="Email" required />
-                    <!-- <br /><br /> -->
-        
-                    <!-- Password (For login-based forms) -->
-                    <!-- <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" />
-                    <br /><br /> -->
-        
-                    <!-- Radio Buttons for Job Type Preference -->
-                    <!-- <label>Job Type Reference</label><br />
-                    <input type="radio" id="fulltime" name="job_type" value="Full-Time" />
-                    <label for="fulltime">Full-Time</label>
-                    <input type="radio" id="parttime" name="job_type" value="Part-Time" />
-                    <label for="parttime">Part-Time</label>
-                    <br /><br /> -->
-        
-                    <!-- Checkbox for Skills -->
-                     <!-- <label>Skills</label><br>
-                     <input type="checkbox" id="html" name="skills" value="HTML">
-                     <label for="html">HTML</label>
-                     <input type="checkbox" id="css" name="skills" value="CSS">
-                     <label for="css">CSS</label>
-                     <input type="checkbox" name="js" id="skills">
-                     <label for="js">JavaScript</label>
-                     <br><br> -->
-        
-                     <!-- Dropdown for Preferred Contact Method -->
-                      <!-- <label for="contact_method">Preferred Contact Method : </label>
-                      <select name="contact_method" id="contact_method">
-                          <option value="email">Email</option>
-                          <option value="phone">Phone</option>
-                          <option value="linkedin">LinkedIn</option>
-                    </select>
-                    <br><br> -->
-        
-                    <!-- Textarea for Additional Information -->
-                     <!-- <label for="message">Message</label><br> -->
-                     <textarea name="message" id="message" rows="4" cols="50" placeholder="Enter your message" required></textarea>
-                     <!-- <br><br> -->
-        
-                     <!-- Submit Button -->
-                      <input id="contact-form-btn" type="submit" value="Send Message">
-                </form>
-            </div>
-        </main>
-        
-        <footer>
-            <section>
-                <ul class="justify-align-center">
-                    <li>
-                        <a href="https://github.com/JiHye0214">
-                            <img src="./assets/logo/github.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/jihye-p-2b3755344">
-                            <img src="./assets/logo/linkedin.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.notion.so/sophie1workplace/Jihye-s-Portfolio-235dc065b28746409114046a5f3f2103?pvs=4">
-                            <img src="./assets/logo/notion.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </footer>
-    </div>
-</body>
+                </section>
+            </footer>
+        </div>
+    </body>
 </html>

@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/about.css" />
         <script defer src="./js/common.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -12,13 +12,9 @@
     </head>
     <body>
         <div class="background">
-            <!-- common -->
             <header>
                 <section>
-                    <div id="logo">
-                        JIHYE
-                        <!-- <p>This is a basic HTML page structure</p> -->
-                    </div>
+                    <div id="logo">JIHYE</div>
                     <nav>
                         <a href="index.html"> Home </a>
                         <a href="about.html"> About </a>
@@ -28,14 +24,11 @@
                     </nav>
                 </section>
             </header>
-            
+
             <main>
                 <section>
                     <div id="about-left-wrap">
                         <div>
-                            <!-- <h2>About Me</h2> -->
-                            <!-- <p>Watch my introduction video :</p> -->
-                            <!-- <video controls poster="assets/sample.jpg" loop> -->
                             <video controls>
                                 <source src="assets/my-video.mp4" type="video/mp4" />
                                 <source src="assets/my-video.webm" type="video/webm" />
@@ -43,8 +36,6 @@
                             </video>
                         </div>
                         <div>
-                            <!-- <h2>My Voice Introduction</h2>
-                            <p>Listen to a short introduction about me :</p> -->
                             <audio controls>
                                 <source src="assets/my-audio.mp3" type="audio/mpeg" />
                                 <source src="assets/my-audio.mp3" type="audio/ogg" />
@@ -53,10 +44,12 @@
                         </div>
 
                         <div id="about-location">
-                            <!-- <h2>My Location</h2> -->
-                            <!-- <p>Find me here :</p> -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.8630794993114!2d-123.11759632326388!3d49.27899162101523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717dd2ac71f1%3A0x23492e5199167816!2zVjZCIDBFOCDruIzrpqzti7Dsi5zsu6zrn7zruYTslYQg67C07L-g67KE!5e0!3m2!1sko!2sca!4v1740863489278!5m2!1sko!2sca" 
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.8630794993114!2d-123.11759632326388!3d49.27899162101523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717dd2ac71f1%3A0x23492e5199167816!2zVjZCIDBFOCDruIzrpqzti7Dsi5zsu6zrn7zruYTslYQg67C07L-g67KE!5e0!3m2!1sko!2sca!4v1740863489278!5m2!1sko!2sca"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
                         </div>
                     </div>
 
@@ -65,11 +58,8 @@
 
                         <div id="about-me">
                             <p>Experienced in front-end and back-end development</p>
-                            <!-- <p><strong>Skills:</strong> <b>HTML</b>, <i>CSS</i>, <u>JavaScript</u></p> -->
                             <p><em>Available for freelance work.</em></p>
-                            <!-- <p><mark>Currendtly learning Angular.js</mark></p> -->
                             <p>Currendtly learning Angular.js</p>
-                            <!-- <p><del>Formerly a Graphic Designer</del></p> -->
                             <p><ins>Focusing on Full-Stack Developer</ins></p>
                         </div>
 
@@ -100,40 +90,7 @@
 
                         <div id="about-work">
                             <h2 class="thick-font">Work Experience</h2>
-                            <ul>
-                                <!-- <li>Software Developer - ABC Tech (2022 - present)</li>
-                                <li>Web Designer - XYZ Solutions (2019 - 2022)</li>
-                                <li>Intern - WebWorks Inc. (2018 - 2019)</li> -->
-                            </ul>
-                            <!-- <h2>Work Experience</h2>
-                            <table width="100%" cellpadding="10" cellspacing="10">
-                                <thead>
-                                    <tr>
-                                        <th>Job Title</th>
-                                        <th>Company</th>
-                                        <th>Years</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Software Developer</td>
-                                        <td>ABC Tech</td>
-                                        <td>2022 - Present</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Web Designer</td>
-                                        <td>XYZ Solutions</td>
-                                        <td>2019 - 2022</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="3">Total years of Experience: 5+ Years</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                    
-                            <p>Completed <span>Google UX Design Certification</span> in <span>2023</span></p> -->
+                            <ul></ul>
                         </div>
 
                         <div id="about-education">
@@ -165,24 +122,26 @@
                         </div>
                     </div>
                 </section>
-            </main> 
+            </main>
 
             <footer>
                 <section>
                     <ul class="justify-align-center">
                         <li>
                             <a href="https://github.com/JiHye0214">
-                                <img src="./assets/logo/github.png" alt="">
+                                <img src="./assets/logo/github.png" alt="" />
                             </a>
                         </li>
                         <li>
                             <a href="https://linkedin.com/in/jihye-p-2b3755344">
-                                <img src="./assets/logo/linkedin.png" alt="">
+                                <img src="./assets/logo/linkedin.png" alt="" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.notion.so/sophie1workplace/Jihye-s-Portfolio-235dc065b28746409114046a5f3f2103?pvs=4">
-                                <img src="./assets/logo/notion.png" alt="">
+                            <a
+                                href="https://www.notion.so/sophie1workplace/Jihye-s-Portfolio-235dc065b28746409114046a5f3f2103?pvs=4"
+                            >
+                                <img src="./assets/logo/notion.png" alt="" />
                             </a>
                         </li>
                     </ul>
